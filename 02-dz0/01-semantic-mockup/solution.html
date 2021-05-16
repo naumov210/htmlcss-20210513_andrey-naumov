@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>02-dzo/01-semantic-mockup</title>
-    </head>
-    <body>
+<!-- Ваше решение -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-dzo/01-semantic-mockup</title>
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="all">
         <header class="header">
             <h1 class="header__title">Header</h1>
             <nav class="header__nav">
                 <ul class="hd__nav_list">
-                    <li class="nd__nav__list__item">Navigation 1</li>
-                    <li class="nd__nav__list__item">Navigation 2</li>
-                    <li class="nd__nav__list__item">Navigation 3</li>
+                    <li class="nd__nav__list__item"><a href="#">Navigation 1</a></li>
+                    <li class="nd__nav__list__item"><a href="#">Navigation 2</a></li>
+                    <li class="nd__nav__list__item"><a href="#">Navigation 3</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <article class="article-1">
-                <h2 class="article-1__title">Article 1</h2>
+            <article>
+                <h2 class="article__title">Article 1</h2>
                 <ul>
-                    <li><a href="#">Оригинальная трилогия</a></li>
-                    <li><a href="#">Трилогия приквелов</a></li>
-                    <li><a href="#">Трилогия сиквелов</a></li>
+                    <li><a class="article__link__item" href="#">Оригинальная трилогия</a></li>
+                    <li><a class="article__link__item" href="#">Трилогия приквелов</a></li>
+                    <li><a class="article__link__item" href="#">Трилогия сиквелов</a></li>
                 </ul>
             </article>
-            <article class="article-2">
-                <h2 class="article-2__title">Article 2</h2>
+            <article>
+                <h2 class="article__title">Article 2</h2>
                 <ol>
-                    <li><a href="#">Эпизод IV — Новая надежда</a></li>
-                    <li><a href="#">Эпизод V — Империя наносит ответный удар</a></li>
-                    <li><a href="#">Эпизод VI — Возвращение джедая</a></li>
+                    <li><a class="article__link__item" href="#">Эпизод IV — Новая надежда</a></li>
+                    <li><a class="article__link__item" href="#">Эпизод V — Империя наносит ответный удар</a></li>
+                    <li><a class="article__link__item" href="#">Эпизод VI — Возвращение джедая</a></li>
                 </ol>
             </article>
         </main>
         <footer>
             <h3>Footer</h3>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
