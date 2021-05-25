@@ -1,3 +1,7 @@
+.menu_layout {
+    margin-left: 1.875em;
+}
+
 .menu__list {
     list-style: none;
 }
