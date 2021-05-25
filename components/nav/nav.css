@@ -1,0 +1,28 @@
+.menu__list {
+    list-style: none;
+}
+
+.menu__list_layout {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__list-item {
+    padding: 0 12px;
+}
+
+.menu__list-item-link {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 2em;
+    text-decoration: none;
+    color: var(--grey-3);
+}
+
+.menu__list-item-link:hover {
+    color: #212429;
+}

@@ -8,47 +8,22 @@
     flex-direction: column;
 }
 
-.menu_layout {
+.header__inner-wrap_layuot {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px 0 0;
 }
 
-.menu__logo_layout {
+.header__logo_layout {
     display: flex;
 }
 
-.menu__logo-link {
+.header__logo-link {
     text-decoration: none;
 }
 
-.menu__list {
-    list-style: none;
-}
 
-.menu__list_layout {
-    display: flex;
-    align-items: center;
-}
-
-.menu__list-item {
-    padding: 0 12px;
-}
-
-.menu__list-item-link {
-    font-family: Inter;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 2em;
-    text-decoration: none;
-    color: var(--grey-3);
-}
-
-.menu__list-item-link:hover {
-    color: #212429;
-}
 
 .header__title {
     font-family: Inter;
