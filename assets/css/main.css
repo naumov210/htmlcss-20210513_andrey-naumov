@@ -19,6 +19,7 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
+    --menu-hover-color: #212429;
     --bgColor-mainSection: #F9FAFC;
 }
 

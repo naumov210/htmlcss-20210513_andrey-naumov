@@ -1,29 +1,24 @@
 .header {
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
-.header_layout {
+.header__layuot {
     display: flex;
     flex-direction: column;
+    padding-top: 25px;
 }
 
-.header__inner-wrap_layuot {
+.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 0 0;
-}
-
-.header__logo_layout {
-    display: flex;
 }
 
 .header__logo-link {
+    display: block;
     text-decoration: none;
 }
-
-
 
 .header__title {
     font-family: Inter;
@@ -31,8 +26,5 @@
     font-style: normal;
     font-size: 3.125em;
     margin: 0;
-}
-
-.header__title_layout {
     padding: 40px 0 77px;
 }

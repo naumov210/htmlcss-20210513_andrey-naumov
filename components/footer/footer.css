@@ -1,4 +1,4 @@
-.footer__inner-wrap_layuot {
+.footer__layuot {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,23 +10,17 @@
     font-weight: 500;
     font-size: 2.375em;
     line-height: 3em;
-}
-
-.footer_title_layout {
     padding: 70px 0 32px;
     margin: 0;
 }
 
-.footer__text {
+.footer__description {
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
     font-size: 1em;
     line-height: 2em;
     text-align: center;
-}
-
-.footer__text_layout {
     width: 57.5%;
     padding: 0 0 136px;
     margin: 0;

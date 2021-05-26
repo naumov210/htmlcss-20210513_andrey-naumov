@@ -1,23 +1,16 @@
-.menu_layout {
-    margin-left: 1.875em;
-}
-
 .menu__list {
-    list-style: none;
-}
-
-.menu__list_layout {
     display: flex;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 1.875em;;
+    list-style: none;
 }
 
-.menu__list-item {
+.menu__item {
     padding: 0 12px;
 }
 
-.menu__list-item-link {
+.menu__item-link {
     font-family: Inter;
     font-weight: 400;
     font-style: normal;
@@ -27,6 +20,6 @@
     color: var(--grey-3);
 }
 
-.menu__list-item-link:hover {
-    color: #212429;
+.menu__item-link:hover {
+    color: var(--menu-hover-color);
 }
