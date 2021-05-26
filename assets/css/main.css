@@ -18,6 +18,8 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --bgColor-mainSection: #F9FAFC;
 }
 
 * {

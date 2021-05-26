@@ -1,4 +1,4 @@
-.footer_layout {
+.footer__inner-wrap_layuot {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +14,7 @@
 
 .footer_title_layout {
     padding: 70px 0 32px;
+    margin: 0;
 }
 
 .footer__text {
