@@ -1,17 +1,11 @@
 /* Стилизация аккордеона */
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 100px;
+.container_width {
+    width: 40%;
 }
 
 .accordion {
-    width: 730px;
-    border-radius: 8px;
-    padding: 24px 32px;
-    background: #fff;
+    width: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -20,45 +14,42 @@ body {
     letter-spacing: 0em;
     text-align: left;
     border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    background: var(--white);
+}
 
+.accordion_indentation {
+    padding: 24px 32px;
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none
+}
+
+.accordion_indentation:not(.accordion_margin-bottom:last-child) {
+    margin-bottom: 8px;
 }
 
 .accordion__summary {
-    display: block;
-    position: relative;
+    list-style: none;
 }
 
-.accordion::-webkit-details-marker {
-    display: none;
+.accordion__summary_item-place {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.accordion__summary::after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: 0;
-    top: -2px;
-    border-right: 2px solid var(--grey-4);
-    border-top: 2px solid var(--grey-4);
-    border-radius: 1px;
-    transform: rotate(135deg);
+.accordion__summary_item-place {
+    display: flex;
 }
 
-.accordion[open] summary::after {
-    /* display: block; */
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: 0;
-    top: 8px;
-    border-right: 2px solid var(--grey-4);
-    border-top: 2px solid var(--grey-4);
-    border-radius: 1px;
-    transform: rotate(315deg);
+
+.accordion[open] .accordion__arrow{
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
-.accordion_margin-bottom:not(.accordion_margin-bottom:last-child) {
-    margin-bottom: 8px;
-}
