@@ -1,68 +1,47 @@
 /* Стилизация кнопки */
-@import '.../assets/css/normalise.css';
 
-/* Layout styles */
-
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button__container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 35rem;
+    text-align: center;
 }
 
-.layout {
+.button__box {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.button__item {
     width: 100%;
-    max-width: 700px;
-    min-width: 375px;
-}
-
-.default {
-    display: flex;
-    padding: 15px;
-    justify-content: space-around;
-}
-
-.disabled {
-    display: flex;
-    padding: 15px;
-    justify-content: space-around;
-}
-
-/* button component */
-
-.button {
-    width: 189px;
     border-radius: 8px;
     font-family: Roboto;
     font-weight: 500;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.6rem;
     line-height: 19px;
     text-align: center;
-    padding: 15px 0 14px;
+    padding: 1.5rem;
     border: none;
 }
 
-/* default */
-
-.button_primary,
-.button_primary:active,
-.button_primary:focus {
+.button__item_primary,
+.button__item_primary:active,
+.button__item_primary:focus {
     color: var(--white);
     background-color: var(--primary);
 }
 
-.button_secondary,
-.button_secondary:active,
-.button_secondary:focus {
+.button__item_secondary,
+.button__item_secondary:active,
+.button__item_secondary:focus {
     color: var(--white);
     background-color: var(--secondary);
 }
 
-.button_alternate,
-.button_alternate:active,
-.button_alternate:focus {
+.button__item_alternate,
+.button__item_alternate:active,
+.button__item_alternate:focus {
     color: var(--grey-3);
     background-color: var(--white);
     border: 1px solid var(--grey-3);
@@ -70,27 +49,27 @@ body{
 
 /* hover */
 
-.button:hover:not(.button[disabled]) {
+.button__item:hover:not(.button__item[disabled]) {
     cursor: pointer;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button_primary:hover:not(.button[disabled]) {
-    background-color: #2342C0;
+.button__item_primary:hover:not(.button__item[disabled]) {
+    background-color: var(--primary-hover);
 }
 
-.button_secondary:hover:not(.button[disabled]) {
-    background-color: #5028C6;
+.button__item_secondary:hover:not(.button__item[disabled]) {
+    background-color: var(--secondary-hover);
 }
 
-.button_alternate:hover:not(.button[disabled]) {
-    color: #212429;
-    border: 1px solid #212429;
+.button__item_alternate:hover:not(.button__item[disabled]) {
+    color: var(--alternate-hover);
+    border: 1px solid var(--alternate-hover);
 }
 
 /* disabled */
 
-.button[disabled] {
+.button__item[disabled] {
     opacity: 0.5;
     cursor: default;
 }
