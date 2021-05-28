@@ -13,7 +13,6 @@
 }
 
 .button__item {
-    width: 100%;
     border-radius: 8px;
     font-family: Roboto;
     font-weight: 500;
@@ -24,6 +23,10 @@
     padding: 1.5rem;
     border: none;
 }
+
+.button__item_full-width { 
+    width: 100%;
+ }
 
 .button__item_primary,
 .button__item_primary:active,
