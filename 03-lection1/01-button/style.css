@@ -1,4 +1,20 @@
-html, 
+html,
 body {
     font-size: 10px !important;
-} 
+}
+
+.button__container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 35rem;
+    text-align: center;
+}
+
+.button__box {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.button_full-width {
+    width: 100%;
+}

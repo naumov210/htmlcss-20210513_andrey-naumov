@@ -1,18 +1,6 @@
 /* Стилизация кнопки */
 
-.button__container {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 35rem;
-    text-align: center;
-}
-
-.button__box {
-    display: inline-block;
-    padding: 0 2rem;
-}
-
-.button__item {
+.button {
     border-radius: 8px;
     font-family: Roboto;
     font-weight: 500;
@@ -24,27 +12,23 @@
     border: none;
 }
 
-.button__item_full-width { 
-    width: 100%;
- }
-
-.button__item_primary,
-.button__item_primary:active,
-.button__item_primary:focus {
+.button_primary,
+.button_primary:active,
+.button_primary:focus {
     color: var(--white);
     background-color: var(--primary);
 }
 
-.button__item_secondary,
-.button__item_secondary:active,
-.button__item_secondary:focus {
+.button_secondary,
+.button_secondary:active,
+.button_secondary:focus {
     color: var(--white);
     background-color: var(--secondary);
 }
 
-.button__item_alternate,
-.button__item_alternate:active,
-.button__item_alternate:focus {
+.button_alternate,
+.button_alternate:active,
+.button_alternate:focus {
     color: var(--grey-3);
     background-color: var(--white);
     border: 1px solid var(--grey-3);
@@ -52,27 +36,27 @@
 
 /* hover */
 
-.button__item:hover:not(.button__item[disabled]) {
+.button:hover:not(.button[disabled]) {
     cursor: pointer;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button__item_primary:hover:not(.button__item[disabled]) {
+.button_primary:hover:not(.button[disabled]) {
     background-color: var(--primary-hover);
 }
 
-.button__item_secondary:hover:not(.button__item[disabled]) {
+.button_secondary:hover:not(.button[disabled]) {
     background-color: var(--secondary-hover);
 }
 
-.button__item_alternate:hover:not(.button__item[disabled]) {
+.button_alternate:hover:not(.button[disabled]) {
     color: var(--alternate-hover);
     border: 1px solid var(--alternate-hover);
 }
 
 /* disabled */
 
-.button__item[disabled] {
+.button[disabled] {
     opacity: 0.5;
     cursor: default;
 }
