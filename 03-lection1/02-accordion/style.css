@@ -4,3 +4,7 @@ body {
     align-items: flex-start;
     padding-top: 100px;
 }
+
+.container_width {
+    width: 40%;
+}

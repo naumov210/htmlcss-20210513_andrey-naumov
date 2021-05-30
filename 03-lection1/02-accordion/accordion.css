@@ -1,9 +1,5 @@
 /* Стилизация аккордеона */
 
-.container_width {
-    width: 40%;
-}
-
 .accordion {
     width: 100%;
     font-family: 'Inter', sans-serif;
@@ -26,18 +22,19 @@
     display: none
 }
 
-.accordion_indentation:not(.accordion_margin-bottom:last-child) {
+.accordion_indentation:not(.accordion_indentation:last-child) {
     margin-bottom: 8px;
 }
 
 .accordion__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
 }
 
 .accordion__summary_item-place {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
 }
 
 .accordion__summary_item-place {
