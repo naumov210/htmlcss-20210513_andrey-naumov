@@ -18,7 +18,10 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --text-secondary: var(--grey-3);
 }
+
 
 * {
     font-family: 'Roboto', sans-serif;
