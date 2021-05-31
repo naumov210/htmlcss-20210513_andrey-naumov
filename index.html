@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="./assets/css/main.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./components/header/header.css">
+    <link rel="stylesheet" href="./components/nav/nav.css">
+    <link rel="stylesheet" href="./components/page/page.css">
+    <link rel="stylesheet" href="./components/footer/footer.css">
+</head>
+
+<body class="page">
+    <!-- .header_layout -->
+    <header class="header">
+        <div class="page__box header__layuot">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect y="1" width="30" height="30" fill="#212429" />
+                            <rect x="38" width="32" height="32" rx="16" fill="#212429" />
+                            <path d="M78 0L110 32H78V0Z" fill="#212429" />
+                        </svg>
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__item-link">Components</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">About</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="header__title">Reusable component library</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="page__box">
+            <section class="cards"></section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="page__box footer__layuot">
+            <h2 class="footer__title">About</h2>
+            <p class="footer__description">This project is a collection of professionally designed,
+                pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out
+                our free preview components, or browsing the PNG previews in the categories you're most curious about.
+            </p>
+        </div>
+    </footer>
+</body>
+
 </html>
