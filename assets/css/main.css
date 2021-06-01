@@ -19,6 +19,9 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
+
+    --text-secondary: var(--grey-3);
+    
     --primary-hover: #2342C0;
     --secondary-hover: #5028C6;
     --alternate-hover: #212429;
@@ -26,6 +29,7 @@
     --menu-hover-color: #212429;
     --bgColor-mainSection: #F9FAFC;
 }
+
 
 * {
     font-family: 'Roboto', sans-serif;
