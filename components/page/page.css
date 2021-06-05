@@ -1,4 +1,3 @@
 .main {
-height: 1036px;
-background-color: var(--bgColor-mainSection);
+    background-color: var(--bgColor-mainSection);
 }
