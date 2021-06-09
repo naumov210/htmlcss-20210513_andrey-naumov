@@ -19,7 +19,6 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
-
     --text-secondary: var(--grey-3);
     
     --primary-hover: #2342C0;
@@ -28,6 +27,11 @@
 
     --menu-hover-color: #212429;
     --bgColor-mainSection: #F9FAFC;
+
+    --calendar-txt-clr: #334D6E;
+    --calendar-weekdays-clr: #90A0B7;
+    --calendar-active-day: #4263EB;
+    --calendar-between-active-clr: #A0B1F5;
 }
 
 
