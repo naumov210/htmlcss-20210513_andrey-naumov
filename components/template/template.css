@@ -1,0 +1,46 @@
+.page {
+    background: var(--bgColor-mainSection);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.page__header {
+    height: 118px;
+    background: #264653;
+}
+
+.page__main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+}
+
+.menu {
+    width: 221px;
+    background: #e9c46a
+}
+
+.component {
+    width: 100%;
+    background: #f4a261;
+}
+
+.page__footer {
+    padding: 56px 0;
+    background: #2a9d8f;
+}
+
+.page__footer-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
