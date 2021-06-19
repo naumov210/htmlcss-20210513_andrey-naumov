@@ -1,18 +1,8 @@
 .calendar__inner {
     position: relative;
     width: 100%;
-    padding-bottom: 114%;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
-}
-
-.calendar__body-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 9%;
 }
 
 .calendar__header {
@@ -78,7 +68,7 @@
     font-size: 9px;
 }
 
-.calendar_size_mini .calendar__body-wrapper {
+.calendar_size_mini .calendar__inner{
     padding: 7%;
 }
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./components/nav/nav.css">
     <link rel="stylesheet" href="./components/page/page.css">
     <link rel="stylesheet" href="./components/card/card.css">
+    <link rel="stylesheet" href="./components/card/card-grid.css">
     <!-- <link rel="stylesheet" href="./components/preview/preview-flex.css"> -->
     <link rel="stylesheet" href="./components/card-calendar/card-calendar.css">
     <link rel="stylesheet" href="./components/card-histogram/card-histogram.css">
@@ -44,6 +45,7 @@
         <div class="page__box">
             <!-- grid container -->
             <div class="card-grid">
+                <!-- Tooltip component -->
                 <a href="#" class="card">
                     <div class="card__body"></div>
                     <div class="card__footer">
@@ -51,6 +53,7 @@
                         <p>Container</p>
                     </div>
                 </a>
+                <!-- form component -->
                 <a href="#" class="card">
                     <div class="card__body"></div>
                     <div class="card__footer">
@@ -58,57 +61,56 @@
                         <p>Element</p>
                     </div>
                 </a>
+                <!-- calendar component -->
                 <a href="#" class="card">
                     <div class="card__body">
                         <div class="calendar calendar_size_mini">
                             <div class="calendar__inner">
-                                <div class="calendar__body-wrapper">
-                                    <div class="calendar__header">October 2019</div>
-                                    <div class="calendar__body">
-                                        <div class="calendar__body-inner">
-                                            <span class="calendar__item calendar__item_day">Mon</span>
-                                            <span class="calendar__item calendar__item_day">Tue</span>
-                                            <span class="calendar__item calendar__item_day">Wed</span>
-                                            <span class="calendar__item calendar__item_day">Thu</span>
-                                            <span class="calendar__item calendar__item_day">Fri</span>
-                                            <span class="calendar__item calendar__item_day">Sat</span>
-                                            <span class="calendar__item calendar__item_day">Sun</span>
-                                            <span class="calendar__item"></span>
-                                            <span class="calendar__item"></span>
-                                            <span class="calendar__item"></span>
-                                            <span class="calendar__item"></span>
-                                            <span class="calendar__item">1</span>
-                                            <span class="calendar__item">2</span>
-                                            <span class="calendar__item">3</span>
-                                            <span class="calendar__item">4</span>
-                                            <span class="calendar__item">5</span>
-                                            <span class="calendar__item">6</span>
-                                            <span class="calendar__item">7</span>
-                                            <span class="calendar__item">8</span>
-                                            <span class="calendar__item">9</span>
-                                            <span class="calendar__item">10</span>
-                                            <span class="calendar__item">11</span>
-                                            <span class="calendar__item">12</span>
-                                            <span class="calendar__item">13</span>
-                                            <span class="calendar__item">14</span>
-                                            <span class="calendar__item">15</span>
-                                            <span class="calendar__item">16</span>
-                                            <span class="calendar__item">17</span>
-                                            <span class="calendar__item calendar__item_active">18</span>
-                                            <span class="calendar__item calendar__item_between-active">19</span>
-                                            <span class="calendar__item calendar__item_between-active">20</span>
-                                            <span class="calendar__item calendar__item_between-active">21</span>
-                                            <span class="calendar__item calendar__item_between-active">22</span>
-                                            <span class="calendar__item calendar__item_active">23</span>
-                                            <span class="calendar__item">24</span>
-                                            <span class="calendar__item">25</span>
-                                            <span class="calendar__item">26</span>
-                                            <span class="calendar__item">27</span>
-                                            <span class="calendar__item">28</span>
-                                            <span class="calendar__item">29</span>
-                                            <span class="calendar__item">30</span>
-                                            <span class="calendar__item">31</span>
-                                        </div>
+                                <div class="calendar__header">October 2019</div>
+                                <div class="calendar__body">
+                                    <div class="calendar__body-inner">
+                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                        <span class="calendar__item calendar__item_day">Wed</span>
+                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                        <span class="calendar__item calendar__item_day">Sun</span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item">1</span>
+                                        <span class="calendar__item">2</span>
+                                        <span class="calendar__item">3</span>
+                                        <span class="calendar__item">4</span>
+                                        <span class="calendar__item">5</span>
+                                        <span class="calendar__item">6</span>
+                                        <span class="calendar__item">7</span>
+                                        <span class="calendar__item">8</span>
+                                        <span class="calendar__item">9</span>
+                                        <span class="calendar__item">10</span>
+                                        <span class="calendar__item">11</span>
+                                        <span class="calendar__item">12</span>
+                                        <span class="calendar__item">13</span>
+                                        <span class="calendar__item">14</span>
+                                        <span class="calendar__item">15</span>
+                                        <span class="calendar__item">16</span>
+                                        <span class="calendar__item">17</span>
+                                        <span class="calendar__item calendar__item_active">18</span>
+                                        <span class="calendar__item calendar__item_between-active">19</span>
+                                        <span class="calendar__item calendar__item_between-active">20</span>
+                                        <span class="calendar__item calendar__item_between-active">21</span>
+                                        <span class="calendar__item calendar__item_between-active">22</span>
+                                        <span class="calendar__item calendar__item_active">23</span>
+                                        <span class="calendar__item">24</span>
+                                        <span class="calendar__item">25</span>
+                                        <span class="calendar__item">26</span>
+                                        <span class="calendar__item">27</span>
+                                        <span class="calendar__item">28</span>
+                                        <span class="calendar__item">29</span>
+                                        <span class="calendar__item">30</span>
+                                        <span class="calendar__item">31</span>
                                     </div>
                                 </div>
                             </div>
@@ -120,6 +122,7 @@
                         <p>Container</p>
                     </div>
                 </a>
+                <!-- modal dialog component -->
                 <a href="#" class="card">
                     <div class="card__body"></div>
                     <div class="card__footer">
@@ -127,6 +130,7 @@
                         <p>Container</p>
                     </div>
                 </a>
+                <!-- histogram component -->
                 <a href="#" class="card">
                     <div class="card__body">
                         <setion class="histogram">
@@ -167,7 +171,7 @@
                                 <div class="histogram__bar" style="height: 50%"></div>
                                 <div class="histogram__bar" style="height: 10%"></div>
                                 <div class="histogram__bar" style="height: 90%"></div>
-                              </div>
+                            </div>
                         </setion>
                     </div>
                     <div class="card__footer">
@@ -175,6 +179,7 @@
                         <p>Element</p>
                     </div>
                 </a>
+                <!-- Avatar component -->
                 <a href="#" class="card">
                     <div class="card__body"></div>
                     <div class="card__footer">

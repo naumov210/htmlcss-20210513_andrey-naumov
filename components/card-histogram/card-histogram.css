@@ -62,7 +62,8 @@
 }
 
 .histogram__bar {
-    flex: 1 0 auto;
+    flex: 1 0 3.306%;
+    min-width: 0.810%;
     margin-right: 1px;
     background: var(--primary);
 }
