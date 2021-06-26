@@ -1,0 +1,23 @@
+.avatar {
+    background: var(--white);
+    width: var(--avatar-md-width);
+    height: var(--avatar-md-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.avatar_small {
+    width: var(--avatar-sm-width);
+    height: var(--avatar-sm-height);
+}
+
+.avatar_large {
+    width: var(--avatar-lrg-width);
+    height: var(--avatar-lrg-height);
+}
+
+.avatar__image {
+    object-fit: cover;
+}
