@@ -39,6 +39,9 @@
     --avatar-sm-width: 64px;
     --avatar-sm-height: 64px;
 
+    --avatar-sm-width: 102px;
+    --avatar-sm-height: 102px;
+
     --avatar-lrg-width: 128px;
     --avatar-lrg-height: 128px;
 }
