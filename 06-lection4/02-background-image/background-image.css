@@ -18,13 +18,13 @@
     background-position: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) {
     .bg-img__item {
         background-image: url(./public/forest_768.jpg);
     }   
 }
 
-@media screen and (min-width: 1024px) and (max-width: 2560px){
+@media screen and (min-width: 1024px) {
     .bg-img__item {
         background-image: url(./public/forest_1024.jpg);
     }   
