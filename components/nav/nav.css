@@ -1,13 +1,19 @@
+.menu {
+    display: none;
+}
+
 .menu__list {
     display: flex;
     align-items: center;
     padding: 0;
-    margin: 0 0 0 1.875em;;
+    margin: 0 0 0 1.875em;
+    ;
     list-style: none;
 }
 
 .menu__item {
-    margin-left: 24px;;
+    margin-left: 24px;
+    ;
 }
 
 .menu__item-link {
@@ -22,4 +28,10 @@
 
 .menu__item-link:hover {
     color: var(--menu-hover-color);
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        display: block;
+    }
 }

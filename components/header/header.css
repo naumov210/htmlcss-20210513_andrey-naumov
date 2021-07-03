@@ -7,13 +7,13 @@
 .header__layuot {
     display: flex;
     flex-direction: column;
-    padding-top: 25px;
+    padding-top: 1rem;
 }
 
 .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header__logo-link {
@@ -21,11 +21,31 @@
     text-decoration: none;
 }
 
+
+
 .header__title {
+    width: 75%;
     font-family: Inter;
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
-    font-size: 3.125em;
+    font-size: 1.75rem;
     margin: 0;
-    padding: 40px 0 77px;
+    padding: 3rem 0 4.3125rem;;
+}
+
+@media screen and (min-width: 768px) {
+    .header__layuot {
+        padding-top: 1.5625rem;
+    }
+
+    .header__container {
+        justify-content: space-between;
+    }
+
+    .header__title {
+        width: 100%;
+        font-weight: 500;
+        font-size: 3.125em;
+        padding: 2.5rem 0 4.8125rem;
+    }
 }
