@@ -1,10 +1,12 @@
 .main {
-    padding: 1.5rem 0;
+    padding: 11px 0;
     background-color: var(--bgColor-mainSection);
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
 }
 
 @media screen and (min-width: 768px) {
     .main {
-        padding: 4.25rem 0;
+        padding: 34px 0;
     }
 }

@@ -1,7 +1,6 @@
 .header {
     width: 100%;
     background-color: var(--white);
-    border-bottom: 1px solid var(--grey-2);
 }
 
 .header__layuot {
@@ -24,7 +23,7 @@
 
 
 .header__title {
-    width: 75%;
+    width: 100%;
     font-family: Inter;
     font-weight: normal;
     font-style: normal;
@@ -43,9 +42,9 @@
     }
 
     .header__title {
-        width: 100%;
         font-weight: 500;
-        font-size: 3.125em;
+        /* 50px */
+        font-size: 3.125rem;
         padding: 2.5rem 0 4.8125rem;
     }
 }

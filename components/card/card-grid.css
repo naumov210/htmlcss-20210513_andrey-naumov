@@ -1,15 +1,16 @@
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(2, calc(52% - 15px));
+    grid-template-columns: repeat(2, calc(50% - 8.5px));
     grid-template-rows: repeat(auto-fill, minmax(230px, auto));
-    grid-gap: 15px;
-    margin: 1.5rem 0;
+    grid-gap: 16px;
+    margin: 11px 0;
 }
 
-/* .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, calc(33.3333% - 15px));
-    grid-template-rows: repeat(auto-fill, minmax(350px, auto));
-    grid-gap: 16px;
-    margin: 1.5rem 0;
-} */
+@media screen and (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(3, calc(33.3333% - 20px));
+        grid-template-rows: repeat(auto-fill, minmax(350px, auto));
+        grid-gap: 30px;
+        margin: 34px 0;
+    } 
+  }

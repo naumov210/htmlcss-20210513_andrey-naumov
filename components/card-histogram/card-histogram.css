@@ -1,15 +1,24 @@
 .histogram {
     width: 100%;
-    padding: 16px 24px 24px 24px;
     background: var(--white);
+
+}
+
+.histogram_size {
+    padding: 35px 0;
+}
+
+.histogram__inner {
     border: 1px solid var(--grey-3);
-    border-radius: 8px;
+    border-radius: 3px;
+    padding: 6px;
 }
 
 .histogram__container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 39px;
+    align-items: baseline;
+    margin-bottom: 2px;
 }
 
 .histogram__left-container {
@@ -23,8 +32,8 @@
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 9px;
+    line-height: 10px;
     white-space: nowrap;
     color: var(--black);
 }
@@ -32,9 +41,9 @@
 .histogram__total {
     font-family: Inter;
     font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
     color: var(--black);
 }
 
@@ -42,7 +51,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 9px;
     line-height: 24px;
     white-space: nowrap;
     text-align: right;
@@ -58,7 +67,7 @@
     width: 100%;
     align-items: flex-end;
     flex-direction: row;
-    height: 50px;
+    height: 30px;
 }
 
 .histogram__bar {
@@ -70,4 +79,49 @@
 
 .histogram__bar:last-child {
     margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .histogram_size {
+        padding: 0;
+    }
+    
+    .histogram__inner {
+        border-radius: 8px;
+        padding: 16px 24px 24px 24px;
+    }
+
+    .histogram__container {
+        margin-bottom: 10%;
+    }
+
+    .histogram__header {
+        /* 12px */
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .histogram__total {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 39px;
+    }
+
+    .histogram__link {
+        font-size: 12px;
+    }
+
+    .histogram__bars {
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .histogram__header {
+        font-size: 24px;
+    }
+
+    .histogram__link {
+        font-size: 16px;
+    }
 }
