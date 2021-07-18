@@ -42,9 +42,10 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 9px;
+    line-height: 1rem;
     color: var(--black);
+    margin-bottom: 1rem;
 }
 
 .histogram__link {
